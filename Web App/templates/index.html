@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style_.css') }}">
+    <title>Web App</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row py-5 align-items-center classe">
+            <!-- For Demo Purpose -->
+            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0 align-items-center">
+                <img src="../static/churn-rate.png" alt="" class="img-fluid mb-3 d-none d-md-block" width="200px">
+                <h1>Make Prediction</h1>          
+            </div>
+
+
+            <div class="col-md-7 col-lg-6 ml-auto">
+                <form action="/predict" method="post">
+                    <label for="calories"></label>
+                    <input type="number" step="any" name="tenure" placeholder="tenure" class="form-control" min="0" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="MonthlyCharges"  placeholder="MonthlyCharges" class="form-control" min="0" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="TotalCharges" placeholder="TotalCharges" class="form-control" min="0" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="Fiber optic" placeholder="Fiber optic" class="form-control" min="0" max="1" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="StreamingTV internet service" placeholder="StreamingTV internet service" class="form-control" min="0" max="1" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="StreamingMovies internet service" placeholder="StreamingMovies internet service" class="form-control" min="0" max="1" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="Contract_Two year" placeholder="Contract Two year" class="form-control" min="0" max="1" required>
+                    <label for=""></label>
+                    <input type="number" step="any" name="PaymentMethod_Electronic_check" placeholder="PaymentMethod Electronic check" class="form-control" min="0" max="1" required>
+                    <label for=""></label>
+                    <input type="submit" step="any" value="predict"  class="btn btn-primary w-100">
+               </form>
+            </div>
+        
+              
+        </div>
+    </div>
+    
+   
+
+
+
+
+</body>
+</html>

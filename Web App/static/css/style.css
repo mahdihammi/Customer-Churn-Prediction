@@ -1,0 +1,37 @@
+body
+{
+  /*background-color: azure;*/
+  height: 100vh;
+  background: linear-gradient(to bottom, #B5FFFC,#FFDEE9);
+
+}
+
+
+
+/*.container {
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 700px;
+    background-color: rgba(219, 212, 200, 0.8)
+  }
+*/
+
+.result
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.churn
+{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 900;
+}
